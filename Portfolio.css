@@ -1,0 +1,426 @@
+body{
+    margin: 0%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+audio{
+    width: 7%;
+}
+/* NAVBAR */
+.navbar{
+    position: fixed;
+    width: 100%;
+    height: auto;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+    align-items: center;  
+}
+.leftsection{
+    display: flex;
+    align-items: center;
+    padding-left: 3rem;
+}
+.leftimg{
+    border-radius: 100%;  
+}
+.lefth1{
+    padding-left: 1rem;
+    font-size: large;
+    font-weight:bolder;
+    color: rgb(81, 81, 81);
+}
+.rightsection ul{
+    display: flex;
+    list-style-type: none; 
+}
+ul li{
+    margin-right: 4em;
+}
+a{
+    color: rgb(81, 81, 81);
+    text-decoration: none;
+    font-weight: bolder;
+}
+/* MAIN PAGE */
+.bodd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;    
+    background-image:url(260208.jpg);
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    height: 100vh;                  
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+.dennisname{
+    font-size: 3rem;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 2px solid black;
+    width: 0;
+    animation: typing 3s steps(30, end) forwards, blink 0.75s step-end infinite;
+  }
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+.bodd h1{
+    font-size: 60px;
+}
+.bodd h3{
+    text-align: center;
+    font-weight:lighter;
+    font-size: 20px;
+    color:black; 
+}
+.bodd button{
+width: 15%;
+height: 8%;
+font-size: medium;
+background-color: black;
+color: white;
+border:none;
+border-radius: 8px;
+cursor: pointer;
+margin-top: 3%;
+}
+/* ABOUT ME */
+.about{
+    background-image: url(1091550.jpg);
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    height: auto;   
+    padding: 100px 20px;
+    text-align: center;
+}
+.aboutcontainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+   text-align: left;
+   margin-top: 3%;
+}
+.about h1{
+    font-size: 40px;
+    color: black;
+}
+.about h3{
+    color: rgb(73, 73, 73); 
+}
+.hr1{
+    width: 2rem;
+    height: 2px;
+    background-color: black; 
+    
+}
+.leftabout h2{
+    color: black;
+    font-size: 30px;
+}
+.leftabout p{
+    color: rgb(73, 73, 73);
+    font-weight: bold;
+    font-size: 17px;
+}
+.rightabout{
+    display: flex;
+    flex-direction: column;
+} 
+.skillcontainer{
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+.skillitem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.skillicon{
+font-size: 5rem;
+}  
+.about button{
+width: 15%;
+height: 8%;
+font-size: medium;
+background-color: black;
+color: white;
+border:none;
+border-radius: 8px;
+cursor: pointer;
+margin-top: 2%;
+}
+/* PROJECTS */
+.projects{
+    padding: 100px 20px;
+    text-align: center;
+}
+.projects h1{
+    font-size: 40px;
+    color: black;
+}
+.hr2{
+    width: 2rem;
+    height: 2px;
+    background-color: black; 
+}
+.projects p{
+    color: rgb(73, 73, 73);  
+    font-size: large;
+    font-weight: bold;
+}
+.project1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    padding: 40px;
+    overflow:hidden;
+}
+.project1 img {
+    width: 50%;
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+.project1 .linkedin {
+    transform: translateX(100%);
+    opacity: 0;
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+.project1:hover img {
+    transform: translateX(0);
+    opacity: 1;
+}
+  .project1:hover .linkedin {
+    transform: translateX(0);
+    opacity: 1;
+}
+/* CONTACT */
+.contact {
+    background-image: url(260208.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    padding: 100px 20px;
+    text-align: center;
+}
+.contact h1 {
+    font-size: 40px;
+    color: black;
+}
+.contact p {
+    color: rgb(73, 73, 73);
+    font-weight: bold;
+    font-size: 17px;
+}
+.hr3 {
+    width: 2rem;
+    height: 2px;
+    background-color: black;
+    margin: 10px auto;
+}
+.contactbox {
+    max-width: 700px;
+    margin: 60px auto;
+    padding: 40px;
+    background: white;
+    border-radius: 12px;
+    text-align: left;
+}
+.form label {
+    font-weight: bold;
+    display: block;
+    margin: 20px 0 5px;
+    color: black;
+}
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 16px;
+    font-size: 16px;
+    font-family: inherit;
+    border: none;
+    background-color: rgb(220, 220, 220);
+    border-radius: 6px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+.form input:focus,
+.form textarea:focus {
+    border: none;
+    outline: none;
+}
+.form button {
+    background-color: black;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+/* SOCIAL */
+.lastsection {
+    background-color: black;
+    padding: 40px 100px 20px;
+    color: white;
+  }
+  .lastsec {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+  .info {
+    max-width: 60%;
+    text-align: left;
+  }
+  .socialicons {
+    text-align: left;
+    padding-right: 40px;
+  }
+  .iconsss {
+    display: flex;
+    gap: 16px;
+    margin-top: 10px;
+  }
+  .h1cls {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2rem;
+  }
+button{
+padding: 10px 20px;
+min-width: 150px;
+}
+
+@media (min-width: 1200px) {
+  .bodd h1 {
+    font-size: 4rem;
+  }
+  .dennisname {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+  }
+  .leftsection {
+    padding-left: 0;
+    margin-bottom: 1rem;
+  }
+  .rightsection ul {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .project1 {
+    flex-direction: column;
+  }
+  .project1 img,
+  .project1 .linkedin {
+    width: 80%;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .bodd button,
+  .about button {
+    width: 40%;
+  }
+}
+@media (max-width: 768px) {
+  .dennisname {
+    font-size: 2rem;
+  }
+  .bodd h1 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .bodd h3 {
+    font-size: 1rem;
+  }
+  .bodd button,
+  .about button {
+    width: 70%;
+    font-size: 1rem;
+    height: auto;
+    padding: 10px;
+  }
+  .aboutcontainer {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .skillcontainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contactbox {
+    width: 90%;
+    padding: 20px;
+  }
+  .lastsec {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .info,
+  .socialicons {
+    max-width: 100%;
+    padding: 0;
+  }
+  .iconsss {
+    justify-content: flex-start;
+  }
+}
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem;
+  }
+  .lefth1 {
+    font-size: medium;
+  }
+  .rightsection ul {
+    gap: 0.5rem;
+  }
+  .bodd h1,
+  .about h1,
+  .projects h1,
+  .contact h1 {
+    font-size: 1.5rem;
+  }
+  .form input,
+  .form textarea {
+    font-size: 14px;
+    padding: 12px;
+  }
+  .form button {
+    font-size: 14px;
+    padding: 10px 20px;
+  }
+  .lastsection {
+    padding: 20px;
+  }
+  .h1cls {
+    font-size: 1rem;
+  }
+}

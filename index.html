@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="IMG_0015.PNG" rel="icon">
+    <link href="Portfolio.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="leftsection">
+           <img class="leftimg" src="IMG_0015.PNG" alt="Dennis Photo" width="50px" height="50px">
+            <h1 class="lefth1">DENNIS BENADICT</h1>
+        </div>
+        <audio controls>
+          <source src="The Weeknd - Starboy (Audio) ft. Daft Punk.mp3" type="audio/mpeg">
+     </audio>
+    <div class="rightsection">
+            <ul>
+                <li><a href="#" onclick="event.preventDefault(); document.getElementById('bodd').scrollIntoView({behavior:'smooth'});">HOME</a></li>
+                <li><a href="#" onclick="event.preventDefault(); document.getElementById('about').scrollIntoView({behavior:'smooth'});">ABOUT</a></li>
+                <li><a href="#" onclick="event.preventDefault(); document.getElementById('projects').scrollIntoView({behavior:'smooth'});">PROJECTS</a></li>
+                <li><a href="#" onclick="event.preventDefault(); document.getElementById('contact').scrollIntoView({behavior:'smooth'});">CONTACT</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="bodd" id="bodd">
+      <div class="center">
+        <h1 class="dennisname">HEY, I'M DENNIS BENADICT</h1>
+      </div>      
+        <h3>A Result Oriented Web Developer building and managing Websites and Web<br>Applications that leads to the success of the overall product</h3>
+        <button onclick="document.getElementById('projects').scrollIntoView({behavior:'smooth'});">
+          <b>PROJECTS</b>
+        </button>
+    </div>
+    <section class="about" id="about">
+        <h1>ABOUT ME</h1>
+        <hr class="hr1">
+        <h3>Here you will find more information about me, what I do, and my current skills mostly in terms<br>of programming and technology</h3>
+        <hr>
+ <div class="aboutcontainer">
+    <div class="leftabout">
+        <h2>Get to know me!</h2>
+        <p>Full-stack developer crafting scalable web applications with clean code and modern frameworks.<br>Passionate about building user-centric solutions, optimizing performance, and always learning<br>the next best thing in tech.</p>
+        <p>Skilled in HTML, CSS, and JavaScript, I create responsive, accessible frontends that deliver smooth<br>user experiences. I enjoy turning ideas into polished interfaces that work seamlessly across devices.</p>
+        <p>Equipped to handle both client and server-side development, I build end-to-end solutions that<br>are reliable, efficient, and easy to maintain. I value clean architecture, thoughtful problem-solving,<br>and continuous improvement.</p>     
+    </div>
+    <div class="rightabout">
+        <h1>My Skills</h1>
+        <div class="skillcontainer">
+          <div class="col-4 skillitem">
+            <i class="fab fa-html5 skillicon" style="color:#e34c26;"></i>
+            <div>HTML</div>
+          </div>
+          <div class="col-4 skillitem">
+            <i class="fab fa-css3-alt skillicon" style="color:#264de4;"></i>
+            <div>CSS</div>
+          </div>
+          <div class="col-4 skillitem">
+            <i class="fab fa-bootstrap skillicon" style="color:#7952b3;"></i>
+            <div>Bootstrap</div>
+          </div>
+          <div class="col-4 skillitem">
+            <i class="fab fa-js-square skillicon" style="color:#f7df1e;"></i>
+            <div>JavaScript</div>
+          </div>
+        </div>
+      </div>
+      </div>
+      <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'});">
+        <b>CONTACT</b>
+      </button>
+</section>
+<!-- PROJECTS -->
+<section class="projects" id="projects">
+  <h1>PROJECTS</h1>
+  <hr class="hr2">
+  <p>Here you will find some of the personal projects that i created with each project containing its own case study.</p>
+  <div class="project1">
+    <img src="Picsart_25-05-01_16-39-43-319.png"alt="Linkedin Clone" width="50%">
+   <div class="linkedin">
+    <h1>LINKEDIN CLONE</h1>
+    <p>A responsive clone of LinkedIn built using HTML and CSS, replicating the core layout, navigation bar, profile section, and feed design. Focused on clean UI, responsive structure, and pixel-perfect alignment across devices.</p>
+   </div>
+  </div>
+  <div class="project1">
+    <img src="Picsart_25-05-01_16-41-15-909.png"alt="W3 Nav Clone" width="50%">
+   <div class="linkedin">
+    <h1>W3SCHOOL NAVBAR CLONE</h1>
+    <p>An accurate replica of the W3Schools navigation bar created using HTML and CSS, focusing on responsive design, hover effects, and clean layout for seamless user experience.</p>
+   </div>
+  </div>
+</section>
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h1>CONTACT</h1>
+  <hr class="hr3">
+  <p>Feel Free to Contact me by submitting the form below and i will get back to you as soon as possible</p>
+  <div class="contactbox">
+    <form class="form" action="https://formsubmit.co/dennisbenadict123@gmail.com" method="POST">
+    <label for="Name">Name</label><br>
+    <input type="text" id="Name" placeholder="Enter your Name"><br>
+    <label for="E-Mail">E-mail</label><br>
+    <input type="email" id="E-Mail"placeholder="Enter your E-mail"><br>
+    <label for="Message">Message</label><br>
+    <textarea class="text" id="Message" placeholder="Please add additionl comment if you have"></textarea><br>
+    <button>Submit</button>
+</form>
+</div>
+</section>
+<!-- LAST SECTION -->
+<section class="lastsection">
+  <div class="lastsec">
+    <div class="info">
+      <h1>DENNIS BENADICT</h1>
+      <p>A Result Oriented Web Developer building and managing Websites and Web<br>
+      Applications that leads to the success of the overall product</p>
+    </div>
+    <div class="socialicons">
+      <h1>SOCIAL</h1>
+      <div class="iconsss">
+       <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin" style="color:#0A66C2; font-size: 2rem;"></i></a>
+        <i class="fab fa-whatsapp" style="color:#25D366; font-size:2rem;"></i>
+      </div>
+    </div>
+  </div>
+  <h1 class="h1cls">Developed with ❤️ by Dennis Benadict</h1>
+</section>
+</body>
+</html>
